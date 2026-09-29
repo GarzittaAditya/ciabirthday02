@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Malicia Eliya Ananta</title>
+
+<style>
+
+/* =========================================
+   FONT
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;1,500&display=swap');
+
+
+/* =========================================
+   RESET
+========================================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body{
+
+    background:#111;
+
+    font-family:Poppins,sans-serif;
+
+    color:#714f5a;
+
+    overflow:hidden;
+
+}
+
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.page{
+
+    width:100vw;
+
+    height:100vh;
+
+    max-width:576px;
+
+    margin:auto;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fffaf7 0%,
+            #fff3f1 48%,
+            #fde5e8 100%
+        );
+
+}
+
+
+/* Background glow */
+
+.page:before,
+.page:after{
+
+    content:"";
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(45px);
+
+    opacity:.45;
+
+    pointer-events:none;
+
+}
+
+
+.page:before{
+
+    width:190px;
+
+    height:190px;
+
+    background:#f6b9c8;
+
+    left:-80px;
+
+    top:80px;
+
+}
+
+
+.page:after{
+
+    width:230px;
+
+    height:230px;
+
+    background:#f8d6a8;
+
+    right:-100px;
+
+    bottom:30px;
+
+}
+
+
+/* =========================================
+   SCENE
+========================================= */
+
+.screen{
+
+    position:absolute;
+
+    inset:0;
+
+    padding:
+        34px
+        24px
+        90px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+
+    transform:
+        translateX(40px)
+        scale(.98);
+
+
+    transition:
+
+        opacity .65s ease,
+
+        transform
+        .65s
+        cubic-bezier(.22,.61,.36,1),
+
+        visibility
+        0s
+        linear
+        .65s;
+
+}
+
+
+/* Scene aktif */
+
+.screen.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    pointer-events:auto;
+
+
+    transform:
+        translateX(0)
+        scale(1);
+
+
+    transition:
+
+        opacity .65s ease,
+
+        transform
+        .65s
+        cubic-bezier(.22,.61,.36,1),
+
+        visibility
+        0s
+        linear
+        0s;
+
+}
+
+
+/* Scene sebelumnya */
+
+.screen.previous{
+
+    transform:
+        translateX(-40px)
+        scale(.98);
+
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.script{
+
+    font-family:
+        "DM Serif Display",
+        "Playfair Display",
+        serif;
+
+    font-style:italic;
+
+    color:#d96c88;
+
+}
+
+
+.kicker{
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#a98790;
+
+}
+
+
+h1{
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size:50px;
+
+    line-height:.95;
+
+    font-weight:400;
+
+}
+
+
+h2{
+
+    font-family:
+        "DM Serif Display",
+        serif;
+
+    font-size:28px;
+
+    font-weight:400;
+
+    color:#754f59;
+
+}
+
+
+.sub{
+
+    font-size:11px;
+
+    line-height:1.8;
+
+    color:#a08188;
+
+    max-width:390px;
+
+}
+
+
+/* =========================================
+   SCENE 1
+   OPENING
+========================================= */
+
+#open .envelope{
+
+    width:94px;
+
+    height:72px;
+
+    border:
+        1px solid
+        #e5a9b7;
+
+    border-radius:8px;
+
+    position:relative;
+
+    background:#fff8f6;
+
+    box-shadow:
+        0 15px
+        35px
+        #dca6b333;
+
+    margin-bottom:25px;
+
+}
+
+
+/* Bentuk surat */
+
+#open .envelope:before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            transparent 49%,
+            #e5a9b7 50%,
+            transparent 51%
+        ),
+
+        linear-gradient(
+            225deg,
+            transparent 49%,
+            #e5a9b7 50%,
+            transparent 51%
+        );
+
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.btn{
+
+    border:0;
+
+    border-radius:30px;
+
+    background:#e77f99;
+
+    color:white;
+
+    padding:
+        12px
+        25px;
+
+    font:
+        500
+        11px
+        Poppins;
+
+    letter-spacing:.5px;
+
+    box-shadow:
+        0 8px
+        22px
+        #d76f8940;
+
+    cursor:pointer;
+
+    transition:
+
+        transform .25s ease,
+
+        box-shadow .25s ease,
+
+        background .25s ease;
+
+}
+
+
+.btn:hover{
+
+    transform:
+        translateY(-2px);
+
+    background:#dc6f8b;
+
+    box-shadow:
+        0 12px
+        28px
+        #d76f8950;
+
+}
+
+
+.btn:active{
+
+    transform:
+        scale(.96);
+
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navigation{
+
+    position:absolute;
+
+    bottom:25px;
+
+    left:0;
+
+    right:0;
+
+    z-index:50;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+.nav-btn{
+
+    border:
+        1px solid
+        #e3a7b4;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .75
+        );
+
+    color:#c56c83;
+
+    padding:
+        9px
+        17px;
+
+    border-radius:30px;
+
+    font-family:Poppins;
+
+    font-size:10px;
+
+    cursor:pointer;
+
+    backdrop-filter:blur(8px);
+
+    transition:.25s;
+
+}
+
+
+.nav-btn:hover{
+
+    background:#e77f99;
+
+    color:white;
+
+    border-color:#e77f99;
+
+}
+
+
+.nav-btn:disabled{
+
+    opacity:.3;
+
+    cursor:not-allowed;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.heart-cloud{
+
+    width:300px;
+
+    height:245px;
+
+    position:relative;
+
+    margin:
+        8px
+        auto
+        22px;
+
+}
+
+
+.h{
+
+    position:absolute;
+
+    font-size:26px;
+
+    color:#e99aaa;
+
+    animation:
+        float
+        3s
+        ease-in-out
+        infinite;
+
+}
+
+
+.h:nth-child(2n){
+
+    color:#f2b4c0;
+
+}
+
+
+.h:nth-child(3n){
+
+    color:#d97b94;
+
+}
+
+
+/* Animasi hati */
+
+@keyframes float{
+
+    50%{
+
+        transform:
+            translateY(-8px)
+            rotate(4deg);
+
+    }
+
+}
+
+
+.hero-name{
+
+    margin:
+        5px
+        0
+        15px;
+
+}
+
+
+/* =========================================
+   GALLERY
+========================================= */
+
+.gallery{
+
+    width:100%;
+
+    max-width:390px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:7px;
+
+    margin:
+        20px
+        0
+        24px;
+
+}
+
+
+.photo{
+
+    aspect-ratio:
+        1/1.08;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f4c4ce,
+            #ead7d0
+        );
+
+    border:
+        4px
+        solid
+        #fff;
+
+    box-shadow:
+        0 7px
+        18px
+        #9f69731c;
+
+    transition:
+        transform .4s ease;
+
+}
+
+
+.photo:hover{
+
+    transform:
+        scale(1.05)
+        rotate(1deg);
+
+}
+
+
+.photo:nth-child(2){
+
+    transform:
+        translateY(-9px);
+
+}
+
+
+.photo:nth-child(5){
+
+    transform:
+        translateY(7px);
+
+}
+
+
+.photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+/* =========================================
+   LETTER
+========================================= */
+
+.card{
+
+    width:100%;
+
+    max-width:410px;
+
+    background:#fffdfa;
+
+    border-radius:12px;
+
+    padding:
+        28px
+        24px
+        25px;
+
+    box-shadow:
+        0 18px
+        45px
+        #b37b8225;
+
+    border:
+        1px
+        solid
+        #f4e1df;
+
+}
+
+
+.card h2{
+
+    margin-bottom:12px;
+
+}
+
+
+.card p{
+
+    font-size:10.5px;
+
+    line-height:2;
+
+    color:#98767e;
+
+}
+
+
+.from{
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-style:italic;
+
+    color:#d56f88;
+
+    margin-top:15px;
+
+    font-size:16px;
+
+}
+
+
+.flowers{
+
+    position:absolute;
+
+    right:-5px;
+
+    bottom:75px;
+
+    font-size:45px;
+
+    opacity:.65;
+
+    transform:
+        rotate(-18deg);
+
+}
+
+
+/* =========================================
+   FINAL
+========================================= */
+
+.final-heart{
+
+    font-size:75px;
+
+    color:#df718b;
+
+    animation:
+        beat
+        1.4s
+        infinite;
+
+}
+
+
+@keyframes beat{
+
+    50%{
+
+        transform:
+            scale(1.12);
+
+    }
+
+}
+
+
+.final h1{
+
+    font-size:45px;
+
+    margin:
+        12px
+        0;
+
+}
+
+
+.final .script{
+
+    font-size:23px;
+
+}
+
+
+/* =========================================
+   DOT INDICATOR
+========================================= */
+
+.dots{
+
+    display:flex;
+
+    gap:6px;
+
+    position:absolute;
+
+    bottom:78px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    z-index:40;
+
+}
+
+
+.dot{
+
+    width:5px;
+
+    height:5px;
+
+    background:#dca2ad;
+
+    border-radius:50%;
+
+    opacity:.35;
+
+    transition:.3s;
+
+}
+
+
+.dot.on{
+
+    opacity:1;
+
+    background:#d76f88;
+
+    transform:
+        scale(1.3);
+
+}
+
+
+/* =========================================
+   MUSIC BUTTON
+========================================= */
+
+#music{
+
+    position:absolute;
+
+    right:16px;
+
+    top:14px;
+
+    z-index:60;
+
+    width:32px;
+
+    height:32px;
+
+    border-radius:50%;
+
+    border:
+        1px
+        solid
+        #dfa2ae;
+
+    background:#fff9;
+
+    color:#c96d84;
+
+    font-size:13px;
+
+    display:none;
+
+    cursor:pointer;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:400px){
+
+    h1{
+
+        font-size:43px;
+
+    }
+
+
+    .heart-cloud{
+
+        transform:
+            scale(.9);
+
+        margin-top:-5px;
+
+        margin-bottom:5px;
+
+    }
+
+
+    .card{
+
+        padding:
+            22px
+            18px;
+
+    }
+
+
+    .card p{
+
+        font-size:10px;
+
+        line-height:1.8;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <!-- ==================================
+         MUSIC
+    =================================== -->
+
+    <button
+        id="music"
+        onclick="toggleMusic()">
+
+        ♫
+
+    </button>
+
+
+    <audio
+        id="audio"
+        loop>
+        <source src="lagu.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+    <!-- ==================================
+         SCENE 1
+         OPENING
+    =================================== -->
+
+    <section
+        class="screen active"
+        id="open">
+
+
+        <div class="envelope"></div>
+
+
+        <div class="kicker">
+
+            a little surprise for
+
+        </div>
+
+
+        <h2
+            class="script"
+            style="
+                font-size:32px;
+                margin:8px 0 15px;
+            ">
+
+            Pacarku Yang Paling Cantik
+
+        </h2>
+
+
+        <p class="sub">
+
+            Ada yang mau aku sampaikan dihari ulang tahun Ayangg...
+
+        </p>
+
+
+        <!--
+        HANYA TOMBOL INI
+        PADA SCENE AWAL
+        -->
+
+        <button
+            class="btn"
+            style="margin-top:25px"
+            onclick="nextScene()">
+
+            Buka Pesan ♥
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- ==================================
+         SCENE 2
+         HERO
+    =================================== -->
+
+    <section
+        class="screen"
+        id="hero">
+
+
+        <div class="kicker">
+
+            Today is your special day
+
+        </div>
+
+
+        <div
+            class="heart-cloud"
+            id="hearts">
+
+        </div>
+
+
+        <div
+            class="script"
+            style="font-size:22px">
+
+            Happy Birthday
+
+        </div>
+
+
+        <h1 class="hero-name">
+
+            Sayangku
+
+        </h1>
+
+
+        <p class="sub">
+
+            Ini coding bikin sendiri semua jadi tolong apresiasi yaa...
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- ==================================
+         SCENE 3
+         GALLERY
+    =================================== -->
+
+    <section
+        class="screen"
+        id="gallery">
+
+
+        <div class="kicker">
+
+            Moment Kita Berdua
+
+        </div>
+
+
+        <div class="gallery">
+
+
+            <div class="photo">
+
+                <img
+                    src="foto1.jpeg"
+                    onerror="
+                        this.style.display='none'
+                    ">
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    src="foto2.jpeg"
+                    onerror="
+                        this.style.display='none'
+                    ">
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    src="foto3.jpeg"
+                    onerror="
+                        this.style.display='none'
+                    ">
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    src="foto4.jpeg"
+                    onerror="
+                        this.style.display='none'
+                    ">
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    src="foto5.jpeg"
+                    onerror="
+                        this.style.display='none'
+                    ">
+
+            </div>
+
+
+            <div class="photo">
+
+                <img
+                    src="foto6.jpeg"
+                    onerror="
+                        this.style.display='none'
+                    ">
+
+            </div>
+
+
+        </div>
+
+
+        <p class="sub">
+
+            Setiap foto punya cerita.
+            Dan aku bersyukur bisa menjadi
+            bagian dari cerita hidup Ayangg, tks.
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- ==================================
+         SCENE 4
+         LETTER
+    =================================== -->
+
+    <section
+        class="screen"
+        id="letter">
+
+
+        <div class="card">
+
+
+            <h2>
+
+                Selamat Ulang Tahun, Sayang ♡
+
+            </h2>
+
+
+            <p>
+
+
+                Hari ini bukan cuma tentang
+                bertambahnya usiamu,
+
+                tapi tentang bersyukurnya aku
+                karena seseorang sebaik dan
+                se spesial Ayangg hadir di dunia ini.
+
+
+                <br><br>
+
+
+                Terima kasih sudah hadir
+                dalam hidup aku.
+
+                Terima kasih untuk setiap tawa,
+                perhatian, cerita, dan waktu
+                yang Ayangg berikan.
+
+
+                <br><br>
+
+
+                Aku gatau gimana
+                rintangan yang akan kita hadapi di depan,
+
+                tapi selama kita berdua bersama,
+                semoga kita selalu kuat untuk menghadapi rintangan
+                yang datang dalam hubungan ini, dan
+                aku ingin terus belajar menjadi
+                pasangan yang bisa membuat Ayangg
+                merasa dicintai dan dihargai.
+
+
+                <br><br>
+
+
+                Semoga semua doa baik yang
+                Ayangg simpan satu per satu
+                menemukan jalannya.
+
+                Semoga Ayangg selalu sehat,
+                bahagia, dan gapernah
+                kehilangan alasan untuk selalu tersenyum.
+
+            </p>
+
+
+            <div class="from">
+
+                — dari pacar Ayangg yang paling ganteng ♡
+
+            </div>
+
+
+        </div>
+
+
+        <div class="flowers">
+
+            🌸
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==================================
+         SCENE 5
+         FINAL
+    =================================== -->
+
+    <section
+        class="screen final"
+        id="final">
+
+
+        <div class="final-heart">
+
+            ♥
+
+        </div>
+
+
+        <div class="script">
+
+            Happy Birthday, cintaku
+
+        </div>
+
+
+        <h1>
+
+            Malicia Eliya Ananta
+
+        </h1>
+
+
+        <p class="sub">
+
+            Semoga tahun ini menjadi awal
+            dari lebih banyak kebahagiaan,
+            mimpi, dan cerita indah untuk kita berdua sayanggg.
+
+        </p>
+
+
+        <div
+            class="script"
+            style="margin-top:25px">
+
+            I love you, always. ♡
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==================================
+         DOT INDICATOR
+    =================================== -->
+
+    <div
+        class="dots"
+        id="dots">
+
+
+        <i class="dot on"></i>
+
+        <i class="dot"></i>
+
+        <i class="dot"></i>
+
+        <i class="dot"></i>
+
+        <i class="dot"></i>
+
+
+    </div>
+
+
+
+    <!-- ==================================
+         NAVIGATION
+    =================================== -->
+
+    <div
+        class="navigation">
+
+
+        <button
+            class="nav-btn"
+            id="prevBtn"
+            onclick="previousScene()">
+
+            ← Kembali
+
+        </button>
+
+
+        <button
+            class="nav-btn"
+            id="nextBtn"
+            onclick="nextScene()">
+
+            Lanjut →
+
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<script>
+
+
+/* =========================================
+   SCENE SYSTEM
+   TIDAK OTOMATIS
+========================================= */
+
+
+const screens =
+    [...document.querySelectorAll(".screen")];
+
+
+const dots =
+    [...document.querySelectorAll(".dot")];
+
+
+const prevBtn =
+    document.getElementById("prevBtn");
+
+
+const nextBtn =
+    document.getElementById("nextBtn");
+
+
+let current = 0;
+
+
+
+/* =========================================
+   SHOW SCENE
+========================================= */
+
+function showScene(){
+
+
+    screens.forEach(
+        (screen,index)=>{
+
+
+            screen.classList.remove(
+                "active",
+                "previous"
+            );
+
+
+            if(index === current){
+
+                screen.classList.add(
+                    "active"
+                );
+
+            }
+
+
+            else if(index < current){
+
+                screen.classList.add(
+                    "previous"
+                );
+
+            }
+
+
+        }
+    );
+
+
+
+    /* =====================================
+       UPDATE DOT
+    ===================================== */
+
+    dots.forEach(
+        (dot,index)=>{
+
+
+            dot.classList.toggle(
+                "on",
+                index === current
+            );
+
+
+        }
+    );
+
+
+
+    /* =====================================
+       NAVIGATION
+
+       SCENE 1:
+       TIDAK ADA TOMBOL
+
+       SCENE 2-5:
+       ADA TOMBOL
+    ===================================== */
+
+
+    if(current === 0){
+
+
+        prevBtn.style.display =
+            "none";
+
+
+        nextBtn.style.display =
+            "none";
+
+
+    }
+
+
+    else{
+
+
+        prevBtn.style.display =
+            "block";
+
+
+        nextBtn.style.display =
+            "block";
+
+
+    }
+
+
+
+    /* =====================================
+       TEXT TOMBOL NEXT
+    ===================================== */
+
+
+    if(current === screens.length - 1){
+
+
+        nextBtn.innerHTML =
+            "Mulai Lagi ↻";
+
+
+    }
+
+
+    else{
+
+
+        nextBtn.innerHTML =
+            "Lanjut →";
+
+
+    }
+
+
+
+    /* =====================================
+       MUSIC BUTTON
+    ===================================== */
+
+
+    document.getElementById(
+        "music"
+    ).style.display =
+
+        current > 0
+        ? "block"
+        : "none";
+
+
+}
+
+
+
+/* =========================================
+   NEXT SCENE
+========================================= */
+
+function nextScene(){
+
+
+    if(current < screens.length - 1){
+
+
+        current++;
+
+
+    }
+
+
+    else{
+
+
+        current = 0;
+
+
+    }
+
+
+    showScene();
+
+
+    /* =====================================
+       AUTO PLAY LAGU SETELAH BUKA PESAN
+       Karena fungsi ini dipanggil langsung
+       dari klik tombol, browser mengizinkan
+       audio.play() tanpa klik tambahan.
+    ===================================== */
+
+    if(current === 1){
+
+        const audio = document.getElementById("audio");
+
+        audio.play().then(() => {
+
+            document.getElementById("music").innerHTML = "Ⅱ";
+
+        }).catch(() => {
+
+            console.log("Lagu tidak dapat diputar. Pastikan lagu.mp3 tersedia.");
+
+        });
+
+    }
+
+
+}
+
+
+
+/* =========================================
+   PREVIOUS SCENE
+========================================= */
+
+function previousScene(){
+
+
+    if(current > 0){
+
+
+        current--;
+
+
+        showScene();
+
+
+    }
+
+
+}
+
+
+
+/* =========================================
+   HEART CLOUD
+========================================= */
+
+const cloud =
+    document.getElementById(
+        "hearts"
+    );
+
+
+const positions = [
+
+
+    [38,8,34],
+
+    [48,0,30],
+
+    [58,8,27],
+
+    [27,22,25],
+
+    [40,20,29],
+
+
+    [53,22,32],
+
+    [68,23,25],
+
+    [18,39,22],
+
+    [31,39,27],
+
+    [47,38,35],
+
+
+    [61,40,25],
+
+    [76,39,24],
+
+    [24,58,29],
+
+    [39,57,25],
+
+    [55,56,30],
+
+
+    [69,58,27],
+
+    [34,76,22],
+
+    [49,73,28],
+
+    [63,76,23]
+
+
+];
+
+
+
+positions.forEach(
+    (p,i)=>{
+
+
+        const heart =
+            document.createElement(
+                "span"
+            );
+
+
+        heart.className =
+            "h";
+
+
+        heart.innerHTML =
+
+            i % 4 === 0
+            ? "♥"
+            : "♡";
+
+
+        heart.style.left =
+            p[0] + "%";
+
+
+        heart.style.top =
+            p[1] + "%";
+
+
+        heart.style.fontSize =
+            p[2] + "px";
+
+
+        heart.style.animationDelay =
+            (i * .08) + "s";
+
+
+        cloud.appendChild(
+            heart
+        );
+
+
+    }
+);
+
+
+
+/* =========================================
+   KEYBOARD
+   PANAH KIRI / KANAN
+========================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+
+        if(event.key === "ArrowRight"){
+
+
+            /*
+            Kalau masih Scene 1,
+            keyboard juga bisa membuka
+            Scene 2.
+            */
+
+            nextScene();
+
+
+        }
+
+
+        if(event.key === "ArrowLeft"){
+
+
+            previousScene();
+
+
+        }
+
+
+    }
+);
+
+
+
+/* =========================================
+   SWIPE HP
+========================================= */
+
+
+let touchStartX = 0;
+
+let touchEndX = 0;
+
+
+
+document.addEventListener(
+    "touchstart",
+    function(event){
+
+
+        touchStartX =
+            event.changedTouches[0]
+            .screenX;
+
+
+    }
+);
+
+
+
+document.addEventListener(
+    "touchend",
+    function(event){
+
+
+        touchEndX =
+            event.changedTouches[0]
+            .screenX;
+
+
+        const distance =
+            touchEndX -
+            touchStartX;
+
+
+
+        /* Swipe kiri
+           = lanjut */
+
+        if(distance < -60){
+
+
+            nextScene();
+
+
+        }
+
+
+
+        /* Swipe kanan
+           = kembali */
+
+        if(distance > 60){
+
+
+            previousScene();
+
+
+        }
+
+
+    }
+);
+
+
+
+/* =========================================
+   MUSIC
+========================================= */
+
+function toggleMusic(){
+
+
+    const audio =
+        document.getElementById(
+            "audio"
+        );
+
+
+    if(!audio.src){
+
+
+        alert(
+            "Tambahkan file lagu.mp3 pada tag audio terlebih dahulu."
+        );
+
+
+        return;
+
+
+    }
+
+
+
+    if(audio.paused){
+
+
+        audio.play();
+
+
+        document.getElementById(
+            "music"
+        ).innerHTML = "Ⅱ";
+
+
+    }
+
+
+    else{
+
+
+        audio.pause();
+
+
+        document.getElementById(
+            "music"
+        ).innerHTML = "♫";
+
+
+    }
+
+
+}
+
+
+
+/* =========================================
+   INITIAL SCENE
+========================================= */
+
+showScene();
+
+
+</script>
+
+
+</body>
+</html>
